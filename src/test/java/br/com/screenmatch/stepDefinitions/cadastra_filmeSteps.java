@@ -3,6 +3,7 @@ package br.com.screenmatch.stepDefinitions;
 import br.com.screenmatch.page.CadastroPage;
 import br.com.screenmatch.page.ListarPage;
 import br.com.screenmatch.utils.BaseTest;
+import br.com.screenmatch.utils.BaseTeste;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
@@ -10,7 +11,7 @@ import org.junit.Assert;
 
 import static br.com.screenmatch.utils.BaseTest.getDriver;
 
-public class cadastra_filmeSteps {
+public class cadastra_filmeSteps extends BaseTeste {
 
     private CadastroPage cadastroPage = new CadastroPage(getDriver());
     private ListarPage listarPage;

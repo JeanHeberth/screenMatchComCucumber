@@ -19,7 +19,6 @@
         <cucumber.version>7.13.0</cucumber.version>
         <slf4j.version>2.0.7</slf4j.version>
         <slf4j.version>2.0.7</slf4j.version>
-        <webdrivermanager.version>5.5.2</webdrivermanager.version>
 
     </properties>
 
@@ -28,12 +27,6 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>${webdrivermanager.version}</version>
         </dependency>
 
         <dependency>
