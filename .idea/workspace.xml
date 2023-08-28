@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8df7fcb4-990a-46bb-ac1a-2575e798da54" name="Changes" comment="Configurando a inicialização do navegador.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/utils/BaseTeste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/utils/HeadlessConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/utils/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/cadastra_filmeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/cadastra_filmeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/utils/BaseTeste.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "configurando-headless",
     "last_opened_file_path": "/Users/jeanheberthsouzavieira/Documents/CloneGitHub/screenMatchComCucumber/screenMatchComCucumber/src/main/java/br/com/screenmatch",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -168,10 +167,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunCucumber" />
-        <item itemvalue="Cucumber Java.Feature: cadastraFilmes" />
-        <item itemvalue="Cucumber Java.Scenario: Um usuário válido consegue se cadastrar um novo filme" />
-        <item itemvalue="Cucumber Java.Scenario: Um usuário válido consegue se logar" />
         <item itemvalue="JUnit.CadastroFilmeTest" />
+        <item itemvalue="Cucumber Java.Scenario: Um usuário válido consegue se logar" />
+        <item itemvalue="Cucumber Java.Scenario: Um usuário válido consegue se cadastrar um novo filme" />
+        <item itemvalue="Cucumber Java.Feature: cadastraFilmes" />
       </list>
     </recent_temporary>
   </component>

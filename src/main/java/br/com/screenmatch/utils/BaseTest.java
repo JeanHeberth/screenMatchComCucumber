@@ -2,6 +2,7 @@ package br.com.screenmatch.utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.slf4j.Logger;
@@ -9,14 +10,19 @@ import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 
-public class BaseTest {
+import static br.com.screenmatch.utils.HeadlessConfig.getChromeOptions;
+
+public class BaseTest{
 
     WebDriver driver;
+
+
+
     public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
     public WebDriver inicializacao(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
-            tlDriver.set(new ChromeDriver());
+            tlDriver.set(new ChromeDriver(getChromeOptions()));
         } else if (browser.equalsIgnoreCase("firefox")) {
             tlDriver.set(new FirefoxDriver());
         } else {
@@ -29,8 +35,12 @@ public class BaseTest {
         return getDriver();
     }
 
+
+
     public static synchronized WebDriver getDriver() {
         return tlDriver.get();
     }
+
+    protected final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 }
