@@ -1,4 +1,4 @@
-package br.com.screenmatch.utils;
+package br.com.screenmatch.core;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

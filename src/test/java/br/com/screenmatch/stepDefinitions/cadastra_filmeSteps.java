@@ -2,13 +2,12 @@ package br.com.screenmatch.stepDefinitions;
 
 import br.com.screenmatch.page.CadastroPage;
 import br.com.screenmatch.page.ListarPage;
-import br.com.screenmatch.utils.Screenshot;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import org.junit.Assert;
 
-import static br.com.screenmatch.utils.BaseTest.getDriver;
+import static br.com.screenmatch.core.BaseTest.getDriver;
 
 public class cadastra_filmeSteps {
 
@@ -21,7 +20,7 @@ public class cadastra_filmeSteps {
 
     @Quando("cadastra o filme com o nome de {string} duração {int} ano {int} e genero {string}")
     public void cadastra_o_filme_com_o_nome_de_duração_ano_e_genero(String nomeDoFilme, Integer duracao, Integer ano, String genero) {
-        listarPage = cadastroPage.cadastraFilme(nomeDoFilme, duracao, ano, genero);
+       listarPage = cadastroPage.cadastraFilme(nomeDoFilme, duracao, ano, genero);
     }
 
     @Entao("é redirecionado para a página de filmes")

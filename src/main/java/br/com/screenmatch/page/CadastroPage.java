@@ -1,9 +1,12 @@
 package br.com.screenmatch.page;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.List;
 
 public class CadastroPage {
 
@@ -28,20 +31,6 @@ public class CadastroPage {
     private WebElement btnCadastrar;
     @FindBy(id = "novo")
     private WebElement btnNovo;
-    @FindBy(id = "listar")
-    private WebElement btnListar;
-
-    public CadastroPage(String nomeDoFilme, Integer duracao, Integer ano, String genero) {
-    }
-
-
-    public void clicaNovo() {
-        btnNovo.click();
-    }
-
-    public void clicaListar() {
-        btnListar.click();
-    }
 
 
     public ListarPage cadastraFilme(String filme, Integer duracao, Integer ano, String genero) {
@@ -58,6 +47,5 @@ public class CadastroPage {
             System.out.println("Campo nao pode ser vazio");
         }
     }
-
 }
 

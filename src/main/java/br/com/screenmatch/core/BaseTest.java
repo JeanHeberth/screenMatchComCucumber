@@ -1,4 +1,4 @@
-package br.com.screenmatch.utils;
+package br.com.screenmatch.core;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,13 +16,11 @@ public class BaseTest{
 
     WebDriver driver;
 
-
-
     public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
     public WebDriver inicializacao(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
-            tlDriver.set(new ChromeDriver(getChromeOptions()));
+            tlDriver.set(new ChromeDriver());
         } else if (browser.equalsIgnoreCase("firefox")) {
             tlDriver.set(new FirefoxDriver());
         } else {

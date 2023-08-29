@@ -1,15 +1,15 @@
 package br.com.screenmatch.page;
 
-import br.com.screenmatch.utils.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class EditarPage extends BasePage {
+public class EditarPage {
+    private WebDriver driver;
 
     public EditarPage(WebDriver driver) {
-       super(driver);
+        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
@@ -33,6 +33,7 @@ public class EditarPage extends BasePage {
 
     @FindBy(id = "novo")
     private WebElement btnNovo;
+
     public void clicaBtnEditar() {
         btnEditar.click();
     }
@@ -61,7 +62,8 @@ public class EditarPage extends BasePage {
     public void clicaCadastrar() {
         btnCadastrar.click();
     }
-    public void limparCampos(){
+
+    public void limparCampos() {
         txtNome.clear();
         txtDuracao.clear();
         txtAno.clear();

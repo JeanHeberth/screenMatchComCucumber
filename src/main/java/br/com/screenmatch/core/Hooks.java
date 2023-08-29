@@ -1,6 +1,5 @@
-package br.com.screenmatch.hooks;
+package br.com.screenmatch.core;
 
-import br.com.screenmatch.utils.BaseTest;
 import br.com.screenmatch.utils.CaptarConfig;
 import br.com.screenmatch.utils.Screenshot;
 import io.cucumber.java.After;
@@ -37,8 +36,8 @@ public class Hooks {
 
     @After(order = 1)
     public void screenShot(Scenario scenario) {
-//        if (scenario.isFailed()){
-        Screenshot.takeScreenShot(driver);
-//        }
+        if (scenario.isFailed()) {
+            Screenshot.takeScreenShot(driver);
+        }
     }
 }
