@@ -9,8 +9,8 @@ Funcionalidade: Cadastrando novo filme
 
 
   Esquema do Cenário: Cadastrando um filme válido
-  Dado o filme válido
-  Quando cadastra o filme com o nome de '<nomeDoFilme>' duração <duracao> ano <ano> e genero '<genero>'
+  Dado que estou na pagina de cadastrar filme
+  Quando cadastro o filme com o nome de '<nomeDoFilme>' duração <duracao> ano <ano> e genero '<genero>'
   Entao é redirecionado para a página de filmes
   Exemplos:
   | nomeDoFilme          | duracao | ano  | genero   |

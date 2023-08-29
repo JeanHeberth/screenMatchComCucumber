@@ -1,16 +1,19 @@
 package br.com.screenmatch.page;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CadastroPage {
 
     private WebDriver driver;
+
+    private List<CadastroPage> filmes = new ArrayList<>();
 
 
     public CadastroPage(WebDriver driver) {
@@ -33,19 +36,27 @@ public class CadastroPage {
     private WebElement btnNovo;
 
 
-    public ListarPage cadastraFilme(String filme, Integer duracao, Integer ano, String genero) {
-        txtNome.sendKeys(filme);
+
+    public List<CadastroPage> cadastraFilmes(String cadastrarFilme, Integer duracao, Integer ano, String genero) {
+        filmes.add(cadastrarFilme(cadastrarFilme, duracao, ano, genero));
+        return Collections.singletonList(new CadastroPage(driver));
+
+    }
+
+    public CadastroPage cadastrarFilme(String nomeDoFilme, Integer duracao, Integer ano, String genero) {
+        txtNome.sendKeys(nomeDoFilme);
         txtDuracao.sendKeys(Integer.toString(duracao));
         txtAno.sendKeys(Integer.toString(ano));
         txtGenero.sendKeys(genero);
         btnCadastrar.click();
-        return new ListarPage(driver);
+        return null;
     }
 
-    public void verificaSeOoFilmeEValido() {
-        if (txtNome.equals("")) {
-            System.out.println("Campo nao pode ser vazio");
-        }
+
+    public boolean estaNaPaginaDeCadastro() {
+       return driver.getCurrentUrl().endsWith("/filmes/formulario");
     }
+
+
 }
 

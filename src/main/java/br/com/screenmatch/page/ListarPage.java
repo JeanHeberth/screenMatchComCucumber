@@ -21,9 +21,10 @@ public class ListarPage {
         btnExcluir.click();
     }
 
-    public boolean estaNaPaginaDeFilmes() {
+    public boolean estaNaPaginaDeListagem() {
         return this.driver.getCurrentUrl().endsWith("/filmes");
     }
+    
 
 
 }
