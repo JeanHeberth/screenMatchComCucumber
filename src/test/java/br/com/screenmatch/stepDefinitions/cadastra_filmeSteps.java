@@ -2,6 +2,7 @@ package br.com.screenmatch.stepDefinitions;
 
 import br.com.screenmatch.page.CadastroPage;
 import br.com.screenmatch.page.ListarPage;
+import br.com.screenmatch.utils.Screenshot;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
