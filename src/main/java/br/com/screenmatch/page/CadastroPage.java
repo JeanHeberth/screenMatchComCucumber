@@ -13,7 +13,9 @@ public class CadastroPage {
 
     private WebDriver driver;
 
-    private List<CadastroPage> filmes = new ArrayList<>();
+    private GerenciaFilmes gerenciaFilmes = new GerenciaFilmes();
+
+//    private List<String> filmes = new ArrayList<>();
 
 
     public CadastroPage(WebDriver driver) {
@@ -36,27 +38,24 @@ public class CadastroPage {
     private WebElement btnNovo;
 
 
-
-    public List<CadastroPage> cadastraFilmes(String cadastrarFilme, Integer duracao, Integer ano, String genero) {
-        filmes.add(cadastrarFilme(cadastrarFilme, duracao, ano, genero));
-        return Collections.singletonList(new CadastroPage(driver));
-
-    }
-
-    public CadastroPage cadastrarFilme(String nomeDoFilme, Integer duracao, Integer ano, String genero) {
+    public String setFilme(String nomeDoFilme, Integer duracao, Integer ano, String genero) {
         txtNome.sendKeys(nomeDoFilme);
         txtDuracao.sendKeys(Integer.toString(duracao));
         txtAno.sendKeys(Integer.toString(ano));
         txtGenero.sendKeys(genero);
         btnCadastrar.click();
-        return null;
+        return new String();
     }
+
 
 
     public boolean estaNaPaginaDeCadastro() {
        return driver.getCurrentUrl().endsWith("/filmes/formulario");
     }
 
+    public void cadastraFilme(String nomeDoFilme, Integer duracao, Integer ano, String genero){
+        gerenciaFilmes.adicionaFilme(setFilme(nomeDoFilme, duracao, ano, genero));
+    }
 
 }
 

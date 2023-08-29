@@ -1,12 +1,6 @@
 #language: pt
 Funcionalidade: Cadastrando novo filme
 
-#
-#  Scenario: Um usuário válido consegue se cadastrar um novo filme
-#    Given o usuário válido
-#    When cadastro um novo filme
-#    Then é redirecionado para a página de filmes
-
 
   Esquema do Cenário: Cadastrando um filme válido
   Dado que estou na pagina de cadastrar filme
