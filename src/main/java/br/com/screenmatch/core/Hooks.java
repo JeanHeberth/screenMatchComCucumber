@@ -36,8 +36,8 @@ public class Hooks {
 
     @After(order = 1)
     public void screenShot(Scenario scenario) {
-        if (scenario.isFailed()) {
+//        if (scenario.isFailed()) {
             Screenshot.takeScreenShot(driver);
-        }
+//        }
     }
 }
