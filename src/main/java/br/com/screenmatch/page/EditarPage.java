@@ -5,8 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class EditarPage {
     private WebDriver driver;
+
+    private GerenciaFilmes gerenciaFilmes = new GerenciaFilmes();
+
 
     public EditarPage(WebDriver driver) {
         this.driver = driver;
@@ -68,5 +75,44 @@ public class EditarPage {
         txtDuracao.clear();
         txtAno.clear();
         txtGenero.clear();
+    }
+
+//    public String setFilme(String nomeDoFilme, Integer duracao, Integer ano, String genero) {
+//        txtNome.sendKeys(nomeDoFilme);
+//        txtDuracao.sendKeys(Integer.toString(duracao));
+//        txtAno.sendKeys(Integer.toString(ano));
+//        txtGenero.sendKeys(genero);
+//        btnCadastrar.click();
+//        return new String();
+//    }
+
+    public String visualizaLista(String filme) {
+        btnListar.click();
+        return new String(filme);
+    }
+
+//    public void atualizaFilme(String nomeDoFilme, Integer duracao, Integer ano, String genero) {
+//        gerenciaFilmes.adicionaFilme(setFilme(nomeDoFilme, duracao, ano, genero));
+//    }
+
+    public void contemFilme(String filme) {
+        gerenciaFilmes.contemFilme(visualizaLista(filme));
+    }
+
+    public boolean estaNaPaginaDeListagemDeFilmes() {
+        return driver.getCurrentUrl().endsWith("/filmes");
+    }
+
+    public void atualizaFilme(List<String> nomes, String filmeAntigo, String filmeNovo) {
+        gerenciaFilmes.atualizaFilme(setFilme(filmeAntigo, filmeNovo));
+    }
+
+
+    private List<String> setFilme(String nomes, String filmeAntigo, String filmeNovo) {
+        btnEditar.click();
+        txtNome.clear();
+        txtNome.sendKeys(filmeNovo);
+        btnCadastrar.click();
+        return Collections.singletonList(new String());
     }
 }

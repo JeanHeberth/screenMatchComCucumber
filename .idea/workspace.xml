@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df7fcb4-990a-46bb-ac1a-2575e798da54" name="Changes" comment="Criando os Screenshot.java">
+    <list default="true" id="8df7fcb4-990a-46bb-ac1a-2575e798da54" name="Changes" comment="Criando a funcionalidade de editar filmes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/dto/FilmeDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/CadastroPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/CadastroPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/ListarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/ListarPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/cadastra_filmeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/cadastra_filmeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/cadastraFilmes.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/cadastraFilmes.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/core/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/core/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/EditarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/EditarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/GerenciaFilmes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/GerenciaFilmes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RunCucumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunCucumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/edita_filmeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/edita_filmeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/cadastraFilme.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/cadastraFilme.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/editaFilme.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/editaFilme.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,31 +51,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "criando-adicionar-filme-com-lista",
-    "last_opened_file_path": "/Users/jeanheberthsouzavieira/Documents/CloneGitHub/screenMatchComCucumber/screenMatchComCucumber/src/main/java/br/com/screenmatch",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;criando-edicao-de-filme&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jeanheberthsouzavieira/Documents/CloneGitHub/screenMatchComCucumber/screenMatchComCucumber/src/test/resources/features&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.lilittlecat.chatgpt.setting.ChatGPTSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.screenmatch.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features" />
       <recent name="$PROJECT_DIR$/src/main/java/br/com/screenmatch" />
       <recent name="$PROJECT_DIR$/src/test/java/br/com/screenmatch" />
     </key>
@@ -84,6 +87,7 @@
       <recent name="br.com.screenmatch.utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.screenmatch.stepDefinitions" />
       <recent name="br.com.screenmatch.page" />
       <recent name="br.com.screenmatch.utils" />
     </key>
@@ -109,15 +113,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Um usuário válido consegue se cadastrar um novo filme" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Editando um filme cadastrado" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
-      <option name="GLUE" value="br.com.screenmatch.stepDefinitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/editaFilme.feature" />
+      <option name="GLUE" value="br.com.screenmatch.core" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="screenMatchComCucumber" />
-      <option name="NAME_FILTER" value="^Um usuário válido consegue se cadastrar um novo filme$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Um usuário válido consegue se cadastrar um novo filme$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Um usuário válido consegue se cadastrar um novo filme" />
+      <option name="NAME_FILTER" value="^Editando um filme cadastrado$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Editando um filme cadastrado$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Editando um filme cadastrado" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -129,36 +133,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Um usuário válido consegue se logar" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="CadastraFilmeTest.adicionarFilme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="screenMatchComCucumber" />
-      <option name="NAME_FILTER" value="^Um usuário válido consegue se logar$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Um usuário válido consegue se logar$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Um usuário válido consegue se logar" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="br.com.screenmatch.stepDefinitions.pageTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="br.com.screenmatch.stepDefinitions.pageTest" />
+      <option name="MAIN_CLASS_NAME" value="br.com.screenmatch.stepDefinitions.pageTest.CadastraFilmeTest" />
+      <option name="METHOD_NAME" value="adicionarFilme" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CadastroFilmeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CadastraFilmeTest.atualizarFilme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="screenMatchComCucumber" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.screenmatch.pageTest.*" />
+          <option name="PATTERN" value="br.com.screenmatch.stepDefinitions.pageTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.screenmatch.pageTest" />
-      <option name="MAIN_CLASS_NAME" value="br.com.screenmatch.pageTest.CadastroFilmeTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="br.com.screenmatch.stepDefinitions.pageTest" />
+      <option name="MAIN_CLASS_NAME" value="br.com.screenmatch.stepDefinitions.pageTest.CadastraFilmeTest" />
+      <option name="METHOD_NAME" value="atualizarFilme" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,10 +177,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunCucumber" />
+        <item itemvalue="Cucumber Java.Scenario: Editando um filme cadastrado" />
+        <item itemvalue="JUnit.CadastraFilmeTest.adicionarFilme" />
+        <item itemvalue="JUnit.CadastraFilmeTest.atualizarFilme" />
         <item itemvalue="Cucumber Java.Scenario: Cadastrando um filme válido" />
-        <item itemvalue="JUnit.CadastroFilmeTest" />
-        <item itemvalue="Cucumber Java.Scenario: Um usuário válido consegue se logar" />
-        <item itemvalue="Cucumber Java.Scenario: Um usuário válido consegue se cadastrar um novo filme" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +205,8 @@
       <workItem from="1693314362481" duration="2019000" />
       <workItem from="1693325541718" duration="3000" />
       <workItem from="1693325556693" duration="1187000" />
+      <workItem from="1693342644152" duration="13635000" />
+      <workItem from="1693489800107" duration="8801000" />
     </task>
     <task id="LOCAL-00001" summary="ss">
       <option name="closed" value="true" />
@@ -228,7 +232,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693249747113</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Criado a funcionalidade de salvar filmes com list.">
+      <option name="closed" value="true" />
+      <created>1693342520529</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693342520529</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Criando a funcionalidade de editar filmes">
+      <option name="closed" value="true" />
+      <created>1693349694771</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693349694771</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +260,32 @@
     <MESSAGE value="realizado o primeiro teste do projeto." />
     <MESSAGE value="Criando a execução dos testes com headless" />
     <MESSAGE value="Refatorando estrutura das pastas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refatorando estrutura das pastas" />
+    <MESSAGE value="Criando a funcionalidade de editar filmes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando a funcionalidade de editar filmes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/GerenciaFilmes.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/GerenciaFilmes.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/EditarPage.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
