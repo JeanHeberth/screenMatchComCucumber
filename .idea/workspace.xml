@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8df7fcb4-990a-46bb-ac1a-2575e798da54" name="Changes" comment="Criando a funcionalidade de editar filmes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/core/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/core/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/EditarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/EditarPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/GerenciaFilmes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/GerenciaFilmes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RunCucumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunCucumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/edita_filmeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/edita_filmeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/cadastraFilme.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/cadastraFilme.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/editaFilme.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/editaFilme.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,27 +258,6 @@
     <MESSAGE value="Refatorando estrutura das pastas" />
     <MESSAGE value="Criando a funcionalidade de editar filmes" />
     <option name="LAST_COMMIT_MESSAGE" value="Criando a funcionalidade de editar filmes" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/GerenciaFilmes.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/GerenciaFilmes.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/EditarPage.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -21,19 +21,15 @@ public class GerenciaFilmes {
         filmes.add(filme);
     }
 
-    //    public void atualizaFilme(String filmeAntigo, String filmeNovo) {
-//        int index = filmes.indexOf(filmeAntigo);
-//        if (index.) {
-//            filmes.set(index, filmeNovo);
-//        }
-    public static void atualizaFilme(List<String> nomes, String filmeAntigo, String filmeNovo) {
-        for (int i = 0; i < nomes.size(); i++) {
-            if (nomes.get(i).equals(filmeAntigo)) {
-                nomes.set(i, filmeNovo);
-                break;
-            }
-
+    public void atualizaFilme(String filmeAntigo, String filmeNovo) {
+        int index = filmes.indexOf(filmeAntigo);
+        if (index != -1) {
+            filmes.set(index, filmeNovo);
         }
+        else{
+            throw new RuntimeException("Filme não encontrado: " + filmeAntigo);
+        }
+
     }
 
     public void removeFilme(String filme) {

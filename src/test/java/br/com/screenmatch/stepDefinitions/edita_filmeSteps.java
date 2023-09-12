@@ -30,7 +30,7 @@ public class edita_filmeSteps {
 
     @Quando("atualizo o filme com o nome de {string} para {string}")
     public void atualizo_o_filme_com_o_nome_de_para(String filmeAntigo, String filmeNovo) {
-        editarPage.atualizaFilme(nomes, filmeAntigo, filmeNovo);
+        editarPage.atualizaFilme(filmeAntigo, filmeNovo);
     }
 
     @Entao("o filme {string} deve ser encontrado na lista")

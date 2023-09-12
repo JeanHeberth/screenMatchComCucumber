@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -91,9 +90,6 @@ public class EditarPage {
         return new String(filme);
     }
 
-//    public void atualizaFilme(String nomeDoFilme, Integer duracao, Integer ano, String genero) {
-//        gerenciaFilmes.adicionaFilme(setFilme(nomeDoFilme, duracao, ano, genero));
-//    }
 
     public void contemFilme(String filme) {
         gerenciaFilmes.contemFilme(visualizaLista(filme));
@@ -103,16 +99,16 @@ public class EditarPage {
         return driver.getCurrentUrl().endsWith("/filmes");
     }
 
-    public void atualizaFilme(List<String> nomes, String filmeAntigo, String filmeNovo) {
+    public void atualizaFilme(String filmeAntigo, String filmeNovo) {
         gerenciaFilmes.atualizaFilme(setFilme(filmeAntigo, filmeNovo));
     }
 
 
-    private List<String> setFilme(String nomes, String filmeAntigo, String filmeNovo) {
+    private String setFilme(String filmeAntigo, String filmeNovo) {
         btnEditar.click();
         txtNome.clear();
         txtNome.sendKeys(filmeNovo);
         btnCadastrar.click();
-        return Collections.singletonList(new String());
+        return new String();
     }
 }
