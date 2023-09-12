@@ -7,7 +7,7 @@
     <list default="true" id="8df7fcb4-990a-46bb-ac1a-2575e798da54" name="Changes" comment="Criando a funcionalidade de editar filmes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/EditarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/EditarPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/GerenciaFilmes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/GerenciaFilmes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RunCucumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunCucumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/edita_filmeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/edita_filmeSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693349694771</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Criando a funcionalidade de editar filmes">
+      <option name="closed" value="true" />
+      <created>1694526074413</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694526074413</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

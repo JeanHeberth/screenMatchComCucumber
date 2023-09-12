@@ -100,7 +100,7 @@ public class EditarPage {
     }
 
     public void atualizaFilme(String filmeAntigo, String filmeNovo) {
-        gerenciaFilmes.atualizaFilme(setFilme(filmeAntigo, filmeNovo));
+//        gerenciaFilmes.atualizaFilme(setFilme(filmeAntigo, filmeNovo));
     }
 
 
