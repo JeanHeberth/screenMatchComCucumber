@@ -10,21 +10,14 @@ public class GerenciaFilmes {
 
     private List<String> filmes = new ArrayList<>();
 
-
-    //    public String addFilme(String nomeDoFilme, Integer duracao, Integer ano, String genero) {
-//        filmes.add(setFilme(nomeDoFilme, duracao, ano, genero));
-//        return new CadastroPage(driver).toString();
-//
-//    }
-
     public void adicionaFilme(String filme) {
         filmes.add(filme);
     }
 
-    public void atualizaFilme(String filmeAntigo, String filmeNovo) {
+    public void atualizaFilme(String filmeAntigo) {
         int index = filmes.indexOf(filmeAntigo);
         if (index != -1) {
-            filmes.set(index, filmeNovo);
+            filmes.set(index, filmeAntigo);
         }
         else{
             throw new RuntimeException("Filme não encontrado: " + filmeAntigo);
@@ -40,4 +33,5 @@ public class GerenciaFilmes {
         filmes.contains(filme);
 
     }
+
 }

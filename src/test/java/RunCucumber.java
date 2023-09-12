@@ -3,6 +3,6 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features", tags = "@cadastrar")
+@CucumberOptions(features = "src/test/resources/features", tags = "@editar")
 public class RunCucumber {
 }

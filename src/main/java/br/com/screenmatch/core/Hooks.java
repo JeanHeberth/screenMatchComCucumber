@@ -11,10 +11,10 @@ import java.util.Properties;
 
 public class Hooks {
 
+    Properties properties;
     private WebDriver driver;
     private BaseTest baseTest;
     private CaptarConfig captaConfig;
-    Properties properties;
 
     @Before(order = 0)
     public void captarPropriedades() {
@@ -36,8 +36,8 @@ public class Hooks {
 
     @After(order = 1)
     public void screenShot(Scenario scenario) {
-//        if (scenario.isFailed()) {
+        if (scenario.isFailed()) {
             Screenshot.takeScreenShot(driver);
-//        }
+        }
     }
 }

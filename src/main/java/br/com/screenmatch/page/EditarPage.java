@@ -5,9 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.Collections;
-import java.util.List;
-
 public class EditarPage {
     private WebDriver driver;
 
@@ -76,16 +73,7 @@ public class EditarPage {
         txtGenero.clear();
     }
 
-//    public String setFilme(String nomeDoFilme, Integer duracao, Integer ano, String genero) {
-//        txtNome.sendKeys(nomeDoFilme);
-//        txtDuracao.sendKeys(Integer.toString(duracao));
-//        txtAno.sendKeys(Integer.toString(ano));
-//        txtGenero.sendKeys(genero);
-//        btnCadastrar.click();
-//        return new String();
-//    }
-
-    public String visualizaLista(String filme) {
+      public String visualizaLista(String filme) {
         btnListar.click();
         return new String(filme);
     }
@@ -100,11 +88,12 @@ public class EditarPage {
     }
 
     public void atualizaFilme(String filmeAntigo, String filmeNovo) {
-//        gerenciaFilmes.atualizaFilme(setFilme(filmeAntigo, filmeNovo));
+        gerenciaFilmes.atualizaFilme(setFilme(filmeAntigo, filmeNovo));
     }
 
 
-    private String setFilme(String filmeAntigo, String filmeNovo) {
+    private String setFilme(String filmeAntigo, String filmeNovo){
+        btnListar.click();
         btnEditar.click();
         txtNome.clear();
         txtNome.sendKeys(filmeNovo);
