@@ -1,0 +1,38 @@
+Index: src/main/java/br/com/screenmatch/page/EditarPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package br.com.screenmatch.page;\n\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.WebElement;\nimport org.openqa.selenium.support.FindBy;\nimport org.openqa.selenium.support.PageFactory;\n\nimport java.util.ArrayList;\nimport java.util.Collections;\nimport java.util.List;\n\npublic class EditarPage {\n    private WebDriver driver;\n\n    private GerenciaFilmes gerenciaFilmes = new GerenciaFilmes();\n\n\n    public EditarPage(WebDriver driver) {\n        this.driver = driver;\n        PageFactory.initElements(driver, this);\n    }\n\n    @FindBy(id = \"listar\")\n    private WebElement btnListar;\n    @FindBy(id = \"editar\")\n    private WebElement btnEditar;\n\n\n    @FindBy(id = \"nome\")\n    private WebElement txtNome;\n\n    @FindBy(id = \"duracao\")\n    private WebElement txtDuracao;\n    @FindBy(id = \"ano\")\n    private WebElement txtAno;\n    @FindBy(id = \"genero\")\n    private WebElement txtGenero;\n    @FindBy(id = \"cadastrar\")\n    private WebElement btnCadastrar;\n\n    @FindBy(id = \"novo\")\n    private WebElement btnNovo;\n\n    public void clicaBtnEditar() {\n        btnEditar.click();\n    }\n\n\n    public void clicaBtnListar() {\n        btnListar.click();\n    }\n\n    public void digitaNomeFilme(String nome) {\n        txtNome.sendKeys(nome);\n    }\n\n    public void digitaDuracao(String duracao) {\n        txtDuracao.sendKeys(duracao);\n    }\n\n    public void digitaAno(String ano) {\n        txtAno.sendKeys(ano);\n    }\n\n    public void digitaGenero(String genero) {\n        txtGenero.sendKeys(genero);\n    }\n\n    public void clicaCadastrar() {\n        btnCadastrar.click();\n    }\n\n    public void limparCampos() {\n        txtNome.clear();\n        txtDuracao.clear();\n        txtAno.clear();\n        txtGenero.clear();\n    }\n\n//    public String setFilme(String nomeDoFilme, Integer duracao, Integer ano, String genero) {\n//        txtNome.sendKeys(nomeDoFilme);\n//        txtDuracao.sendKeys(Integer.toString(duracao));\n//        txtAno.sendKeys(Integer.toString(ano));\n//        txtGenero.sendKeys(genero);\n//        btnCadastrar.click();\n//        return new String();\n//    }\n\n    public String visualizaLista(String filme) {\n        btnListar.click();\n        return new String(filme);\n    }\n\n//    public void atualizaFilme(String nomeDoFilme, Integer duracao, Integer ano, String genero) {\n//        gerenciaFilmes.adicionaFilme(setFilme(nomeDoFilme, duracao, ano, genero));\n//    }\n\n    public void contemFilme(String filme) {\n        gerenciaFilmes.contemFilme(visualizaLista(filme));\n    }\n\n    public boolean estaNaPaginaDeListagemDeFilmes() {\n        return driver.getCurrentUrl().endsWith(\"/filmes\");\n    }\n\n    public void atualizaFilme(List<String> nomes, String filmeAntigo, String filmeNovo) {\n        gerenciaFilmes.atualizaFilme(setFilme(filmeAntigo, filmeNovo));\n    }\n\n\n    private List<String> setFilme(String nomes, String filmeAntigo, String filmeNovo) {\n        btnEditar.click();\n        txtNome.clear();\n        txtNome.sendKeys(filmeNovo);\n        btnCadastrar.click();\n        return Collections.singletonList(new String());\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/br/com/screenmatch/page/EditarPage.java b/src/main/java/br/com/screenmatch/page/EditarPage.java
+--- a/src/main/java/br/com/screenmatch/page/EditarPage.java	
++++ b/src/main/java/br/com/screenmatch/page/EditarPage.java	
+@@ -5,8 +5,6 @@
+ import org.openqa.selenium.support.FindBy;
+ import org.openqa.selenium.support.PageFactory;
+ 
+-import java.util.ArrayList;
+-import java.util.Collections;
+ import java.util.List;
+ 
+ public class EditarPage {
+@@ -104,15 +102,15 @@
+     }
+ 
+     public void atualizaFilme(List<String> nomes, String filmeAntigo, String filmeNovo) {
+-        gerenciaFilmes.atualizaFilme(setFilme(filmeAntigo, filmeNovo));
++        gerenciaFilmes.atualizaFilme(setFilme(nomes, filmeAntigo, filmeNovo));
+     }
+ 
+ 
+-    private List<String> setFilme(String nomes, String filmeAntigo, String filmeNovo) {
++    private void setFilme(List<String> nomes, String filmeAntigo, String filmeNovo) {
+         btnEditar.click();
+         txtNome.clear();
+         txtNome.sendKeys(filmeNovo);
+         btnCadastrar.click();
+-        return Collections.singletonList(new String());
+     }
+ }
++
