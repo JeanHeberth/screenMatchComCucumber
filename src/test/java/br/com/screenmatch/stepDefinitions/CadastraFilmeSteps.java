@@ -9,7 +9,7 @@ import io.cucumber.java.pt.Quando;
 import static br.com.screenmatch.core.BaseTest.getDriver;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class cadastra_filmeSteps {
+public class CadastraFilmeSteps {
 
     private CadastroPage cadastroPage = new CadastroPage(getDriver());
     private ListarPage listarPage = new ListarPage(getDriver());

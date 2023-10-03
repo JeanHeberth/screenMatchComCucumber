@@ -1,21 +1,18 @@
 package br.com.screenmatch.stepDefinitions;
 
-import br.com.screenmatch.page.CadastroPage;
 import br.com.screenmatch.page.EditarPage;
-import br.com.screenmatch.page.GerenciaFilmes;
 import br.com.screenmatch.page.ListarPage;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import static br.com.screenmatch.core.BaseTest.getDriver;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class edita_filmeSteps {
+public class EditaFilmeSteps {
 
     private List<String> nomes = new ArrayList<>();
     private ListarPage listarPage = new ListarPage(getDriver());

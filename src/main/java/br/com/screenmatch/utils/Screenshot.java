@@ -35,7 +35,7 @@ public class Screenshot {
         private static String generateFileName() {
             SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy-HH:mm");
             String path = "src/test/resources/screenshots/";
-//            return path + "evidencia-" + formatter.format(new Date()) + ".png";
+            return path + "evidencia-" + formatter.format(new Date()) + ".png";
         }
 
 

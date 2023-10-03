@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8df7fcb4-990a-46bb-ac1a-2575e798da54" name="Changes" comment="Criando a funcionalidade de editar filmes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/FormularioFilmesPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/EditarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/EditarPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RunCucumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunCucumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/edita_filmeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/edita_filmeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/utils/Screenshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/utils/Screenshot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/cadastra_filmeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/CadastraFilmeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/edita_filmeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/EditaFilmeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/pageTest/CadastraFilmeTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,26 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;criando-edicao-de-filme&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jeanheberthsouzavieira/Documents/CloneGitHub/screenMatchComCucumber/screenMatchComCucumber/src/test/resources/features&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.lilittlecat.chatgpt.setting.ChatGPTSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "corrigindo-base-do-codigo",
+    "last_opened_file_path": "/Users/jeanheberthsouzavieira/Documents/CloneGitHub/screenMatchComCucumber/screenMatchComCucumber/src/test/resources/features",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.lilittlecat.chatgpt.setting.ChatGPTSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.screenmatch.utils" />
@@ -173,9 +175,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunCucumber" />
-        <item itemvalue="Cucumber Java.Scenario: Editando um filme cadastrado" />
-        <item itemvalue="JUnit.CadastraFilmeTest.adicionarFilme" />
         <item itemvalue="JUnit.CadastraFilmeTest.atualizarFilme" />
+        <item itemvalue="JUnit.CadastraFilmeTest.adicionarFilme" />
+        <item itemvalue="Cucumber Java.Scenario: Editando um filme cadastrado" />
         <item itemvalue="Cucumber Java.Scenario: Cadastrando um filme válido" />
       </list>
     </recent_temporary>
@@ -203,6 +205,8 @@
       <workItem from="1693325556693" duration="1187000" />
       <workItem from="1693342644152" duration="13635000" />
       <workItem from="1693489800107" duration="8801000" />
+      <workItem from="1696357678281" duration="165000" />
+      <workItem from="1696357850389" duration="1725000" />
     </task>
     <task id="LOCAL-00001" summary="ss">
       <option name="closed" value="true" />
@@ -266,6 +270,17 @@
     <MESSAGE value="Refatorando estrutura das pastas" />
     <MESSAGE value="Criando a funcionalidade de editar filmes" />
     <option name="LAST_COMMIT_MESSAGE" value="Criando a funcionalidade de editar filmes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/EditaFilmeSteps.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
