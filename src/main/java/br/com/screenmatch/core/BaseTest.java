@@ -29,7 +29,7 @@ public class BaseTest{
         getDriver().manage().deleteAllCookies();
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        getDriver().get("http://localhost:8088/filmes/formulario");
+        getDriver().get("http://localhost:8088/filmes");
         return getDriver();
     }
 

@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df7fcb4-990a-46bb-ac1a-2575e798da54" name="Changes" comment="Alterando a base do código" />
+    <list default="true" id="8df7fcb4-990a-46bb-ac1a-2575e798da54" name="Changes" comment="Alterando a base do código">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/core/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/ListarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/ListarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/EditaFilmeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/EditaFilmeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/editaFilme.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/editaFilme.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/evidencia-03-10-2023-15:34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/evidencia-03-10-2023-18:35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/evidencia-12-09-2023-13:58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/evidencia-12-09-2023-14:44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/evidencia-12-09-2023-14:47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/evidencia-25-09-2023-17:34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/evidencia-25-09-2023-17:37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/evidencia-25-09-2023-17:40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/evidencia-25-09-2023-17:41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/evidencia-25-09-2023-17:43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/evidencia-25-09-2023-17:48.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +66,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "corrigindo-base-do-codigo",
+    "git-widget-placeholder": "corrigindo-edicao-de-filme",
     "last_opened_file_path": "/Users/jeanheberthsouzavieira/Documents/CloneGitHub/screenMatchComCucumber/screenMatchComCucumber/src/test/resources/features",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -168,9 +185,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunCucumber" />
+        <item itemvalue="Cucumber Java.Scenario: Editando um filme cadastrado" />
         <item itemvalue="JUnit.CadastraFilmeTest.atualizarFilme" />
         <item itemvalue="JUnit.CadastraFilmeTest.adicionarFilme" />
-        <item itemvalue="Cucumber Java.Scenario: Editando um filme cadastrado" />
         <item itemvalue="Cucumber Java.Scenario: Cadastrando um filme válido" />
       </list>
     </recent_temporary>
@@ -278,7 +295,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/EditaFilmeSteps.java</url>
-          <line>28</line>
+          <line>30</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
