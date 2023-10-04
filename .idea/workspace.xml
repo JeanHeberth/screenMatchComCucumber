@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df7fcb4-990a-46bb-ac1a-2575e798da54" name="Changes" comment="Criando a funcionalidade de editar filmes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/page/FormularioFilmesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/utils/Screenshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/screenmatch/utils/Screenshot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/cadastra_filmeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/CadastraFilmeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/edita_filmeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/EditaFilmeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/screenmatch/stepDefinitions/pageTest/CadastraFilmeTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="8df7fcb4-990a-46bb-ac1a-2575e798da54" name="Changes" comment="Alterando a base do código" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +199,7 @@
       <workItem from="1693342644152" duration="13635000" />
       <workItem from="1693489800107" duration="8801000" />
       <workItem from="1696357678281" duration="165000" />
-      <workItem from="1696357850389" duration="1725000" />
+      <workItem from="1696357850389" duration="2339000" />
     </task>
     <task id="LOCAL-00001" summary="ss">
       <option name="closed" value="true" />
@@ -256,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694526074413</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Alterando a base do código">
+      <option name="closed" value="true" />
+      <created>1696369571140</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696369571140</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +270,8 @@
     <MESSAGE value="Criando a execução dos testes com headless" />
     <MESSAGE value="Refatorando estrutura das pastas" />
     <MESSAGE value="Criando a funcionalidade de editar filmes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando a funcionalidade de editar filmes" />
+    <MESSAGE value="Alterando a base do código" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterando a base do código" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
